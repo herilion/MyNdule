@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Poppins:wght@300&family=Raleway&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b0b0b;
+  color: white;
+  font-family: "ABeeZee", sans-serif;
+}
+.line {
+  background-color: rgba(127, 126, 126, 0.845);
+  height: 1px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+li {
+  list-style: none;
+}
+.button {
+  width: 90px;
+  border-radius: 15px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid blue;
+  color: white;
+  height: 100%;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 1;
+}
+.signout {
+  width: 90px;
+  margin-left: 90%;
+  height: 30px;
+}
+
+.text {
+  margin-bottom: 20px;
+  margin-top: 20%;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  width: 500px;
+}
+
+@media (max-width: 900px) {
+  .text {
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-top: 70%;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  h1 {
+    width: 300px;
+  }
+  .desk {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+  .signout {
+    width: 90px;
+    margin-left: 75%;
+    height: 30px;
+  }
+}
