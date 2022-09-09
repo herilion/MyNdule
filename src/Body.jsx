@@ -152,26 +152,6 @@ function Body({
             );
           })}
       </ul>
-
-      {/* <div className="tracks">
-        <span className="span">
-          <MdQueueMusic />{" "}
-        </span>{" "}
-        TRACKS
-      </div> */}
-
-      {/* <div className="contcard">
-        <div className="card">
-          {items.map((item, idx) => (
-            <div>
-              <li key={idx}>
-                <img src={item.track.album.images[0].url} alt="" />
-                {item.track.name}
-              </li>
-            </div>
-          ))}
-        </div>
-      </div> */}
     </Container>
   );
 }
