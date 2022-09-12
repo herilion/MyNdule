@@ -1,7 +1,7 @@
 const Identifiants = () => {
   return {
-    ClientId: "007c7d1f9bbe4abea2d80be294faf921",
-    ClientSecret: "4eafd67b407e4201a3951eccbf9490a5",
+    clientId: "af27c3b99f1944b285e63baa7b33c5f3",
+    clientSecret: "dd6f1c4b77b8498193d77dd0aa26b511",
   };
 };
 

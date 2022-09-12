@@ -1,0 +1,8 @@
+.sidebarRigth{
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    left: 10px;
+    top:0;
+    background: red;
+}

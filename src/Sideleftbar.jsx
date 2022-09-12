@@ -16,15 +16,15 @@ function Sideleftbar({ idp, type }) {
   );
 }
 const Container = styled.div`
-  margin-top: 5%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  width: 20vw;
-  background-color: #2d2d2d;
+  ${'' /* width: 20vw; */}
+  background-color: red;
   height: 128vh;
   iframe {
     height: 100%;
+    right: 0;
   }
 
   img {
@@ -36,8 +36,8 @@ const Container = styled.div`
   .track {
     width: 130px;
     height: 130px;
-    margin-right: auto;
-    margin-left: auto;
+    ${'' /* margin-right: auto;
+    margin-left: auto; */}
     margin-top: 30%;
     border: 2px solid white;
     border-radius: 50%;

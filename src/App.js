@@ -9,11 +9,12 @@ import Body from "./Body";
 import Sidebar from "./Sidebar";
 import Sideleftbar from "./Sideleftbar";
 import jwtDecode from "jwt-decode";
+import Login from "./login";
 
 const App = () => {
   const [ide, setIde] = useState("hiphop");
   const [type, setType] = useState("playlist");
-  const [idp, setIdp] = useState("37i9dQZF1DX6tw5tib6ZrB");
+  const [idp, setIdp] = useState("0GseOzFJLCWppqAGufy7Jf");
   const [idq, setIdq] = useState("2022");
   const [yourSearch, setYourSearch] = useState("POPULAR PLAYLIST");
   const [yourSearchALbum, setYourSearchALbum] = useState();
@@ -21,7 +22,7 @@ const App = () => {
 
   const spotify = Identifiants();
 
-  const [playing, setPlaying] = useState("37i9dQZF1DX6tw5tib6ZrB");
+  const [playing, setPlaying] = useState("0GseOzFJLCWppqAGufy7Jf");
   const [token, setToken] = useState("");
   const [genres, setGenres] = useState({
     selectedGenre: "",
@@ -52,16 +53,14 @@ const App = () => {
   const [user, setUser] = useState({});
 
   function handleCallbackResponse(response) {
-    console.log("Encoded JWT ID token: " + response.credential);
     var userObject = jwtDecode(response.credential);
-    console.log(userObject);
     setUser(userObject);
-    document.getElementById("signInDiv").hidden = true;
+    document.getElementById("googlebtn").hidden = true;
   }
   function handleSignOut(event) {
     setUser({});
     window.location.reload();
-    document.getElementById("signInDiv").hidden = false;
+    document.getElementById("googlebtn").hidden = false;
   }
   if (Object.keys(user).length !== 0) {
     document.getElementById("connexion").hidden = true;
@@ -70,21 +69,21 @@ const App = () => {
     /*global google */
     google.accounts.id.initialize({
       client_id:
+
         "335727433102-geo6pedmit8njss3hhe7nh6gfbkpt79a.apps.googleusercontent.com",
       callback: handleCallbackResponse,
     });
-    google.accounts.id.renderButton(document.getElementById("signInDiv"), {
+    google.accounts.id.renderButton(document.getElementById("googlebtn"), {
       theme: "outline",
       size: "large",
     });
     google.accounts.id.prompt();
-    console.log("user", user);
 
     axios("https://accounts.spotify.com/api/token", {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
         Authorization:
-          "Basic " + btoa(spotify.ClientId + ":" + spotify.ClientSecret),
+          "Basic " + btoa(spotify.clientId + ":" + spotify.clientSecret),
       },
       data: "grant_type=client_credentials",
       method: "POST",
@@ -132,7 +131,7 @@ const App = () => {
         });
       });
     });
-    axios(`https://api.spotify.com/v1/search?q=${idq}&type=track&limit=50`, {
+    axios(`https://api.spotify.com/v1/search?q=${idq}&type=track&limit=60`, {
       method: "GET",
       headers: {
         Authorization: "Bearer " + token,
@@ -177,21 +176,13 @@ const App = () => {
           selectedTrack: tracks.selectedTrack,
           listOfTracksFromAPI: tracksResponse.data.items,
         });
-        console.log("ancien", tracksResponse);
       });
     });
-  }, [ide, idp, genres.selectedGenre, spotify.ClientId, spotify.ClientSecret]);
+  }, [ide, idp, genres.selectedGenre, spotify.clientId, spotify.clientSecret]);
 
   return (
     <div>
-      <div id="connexion" className="connexion">
-        <div className="text">
-          <h1>find and listen your favorite artist</h1>
-          <img src="logo.png" alt="" />
-        </div>
-
-        <div id="signInDiv"></div>
-      </div>
+      <Login />
       <div className="signout">
         {Object.keys(user).length !== 0 && (
           <button className="button" onClick={(e) => handleSignOut(e)}>

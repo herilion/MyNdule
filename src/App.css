@@ -13,6 +13,10 @@ body {
   color: white;
   font-family: "ABeeZee", sans-serif;
 }
+.connexion img{
+  width: 250px;
+  border-radius: 50%;
+}
 .line {
   background-color: rgba(127, 126, 126, 0.845);
   height: 1px;

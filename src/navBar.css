@@ -1,0 +1,54 @@
+.navBar{
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  background-color: red;  
+}
+  button {
+    border: none;
+    background-color: transparent;
+  }
+  form {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+  }
+  .search_bar span {
+      color: blue;
+  }
+  .search_bar {
+    background-color: white;
+    width: 40%;
+    margin-left:10px;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: right;
+    gap: 0.5rem;
+    }
+   .search_bar input {
+      border: none;
+      height: 1.5rem;
+      width: 100%;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+     a img {
+        border-radius: 50%;
+      }
+      a span {
+        display: flex;
+
+        align-items: center;
+        font-size: 9px;
+      }
