@@ -6,6 +6,30 @@
     top:0;
     background:aquamarine;
 }
+.logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 .logo img{
     border-radius: 50%;
+}
+.logo h2{
+color: rgb(228, 51, 110);
+}
+.line{
+    height: 5px;
+    width: 100%;
+    background-color: rgb(228, 51, 110);
+}
+.menuprincipal span{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+}
+.menuprincipal li{
+    font-size: 16px;
 }

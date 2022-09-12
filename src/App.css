@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Poppins:wght@300&family=Raleway&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +11,6 @@ body {
   align-items: center;
   background-color:aquamarine;
   color: white;
-  font-family: "ABeeZee", sans-serif;
 }
 .plus{
   width: 100%;
@@ -60,10 +59,12 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5px;
 }
 
 h1 {
   width: 500px;
+  color: rgb(228, 51, 110);
 }
 
 @media (max-width: 900px) {

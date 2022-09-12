@@ -18,21 +18,22 @@ function Sidebar({ genres, setIde, setYourSearch }) {
             window.location.reload();
           }}
         >
-          <img src="logo.png" alt="" width={130} />
+          <img src="logo.png" alt="" width={80} />
+          <h2>My NDULE</h2>
         </div>
         <div className="line"></div>
-        <ul>
+        <ul className="menuprincipal">
           <span>MENU</span>
           <li>
-            <MdHomeFilled />
+            <span><MdHomeFilled /></span>
             <span>Home</span>
           </li>
           <li>
-            <MdSearch />
+            <span><MdSearch /></span>
             <span>Search</span>
           </li>
           <li>
-            <MdLibraryMusic />
+            <span><MdLibraryMusic /></span>
             <span>Your Library</span>
           </li>
         </ul>

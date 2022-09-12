@@ -3,7 +3,6 @@ display: flex;
   justify-content: space-between;
   align-items: center;
   transition: 0.3s ease-in-out;
-  background-color: red;  
 }
   button {
     border: none;
