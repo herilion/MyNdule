@@ -1,8 +1,11 @@
 .sidebarRigth{
     position: fixed;
     height: 100%;
-    width: 25%;
-    left: 10px;
+    width: 17%;
+    left: 5px;
     top:0;
-    background: red;
+    background:aquamarine;
+}
+.logo img{
+    border-radius: 50%;
 }

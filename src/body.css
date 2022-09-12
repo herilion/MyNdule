@@ -68,11 +68,6 @@
     width: 90%;
     height: 400px;
     overflow: auto;
-    /* &::-webkit-scrollbar {
-      width: 0.2rem;
-      &-thumb {
-        background-color: blue;
-      } */
     }
     li {
       margin-bottom: 2%;
@@ -83,12 +78,7 @@
     li:hover {
       color: blue;
     }
-    /* img {
-      width: 30px;
-      border-radius: 50%;
-    } */
   
-
   .span {
     font-size: 25px;
     color: blue;

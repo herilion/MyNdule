@@ -4,15 +4,17 @@ import styled from "styled-components";
 
 function Sideleftbar({ idp, type }) {
   return (
-    <Container>
-      <iframe
-        src={`https://open.spotify.com/embed/${type}/${idp}?utm_source=generator`}
-        frameBorder="0"
-        allowFullScreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-    </Container>
+    <div className='sideLeftbar' >
+      <Container>
+        <iframe
+          src={`https://open.spotify.com/embed/${type}/${idp}?utm_source=generator`}
+          frameBorder="0"
+          allowFullScreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </Container>
+    </div>
   );
 }
 const Container = styled.div`

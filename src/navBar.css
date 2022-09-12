@@ -21,13 +21,14 @@ display: flex;
   }
   .search_bar {
     background-color: white;
-    width: 40%;
-    margin-left:10px;
+    width: 200px;
+    margin-left:50px;
     padding: 0.4rem 1rem;
     border-radius: 2rem;
     display: flex;
     align-items: right;
     gap: 0.5rem;
+    position: fixed;
     }
    .search_bar input {
       border: none;

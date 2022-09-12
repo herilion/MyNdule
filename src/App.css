@@ -9,9 +9,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0b0b0b;
+  background-color:aquamarine;
   color: white;
   font-family: "ABeeZee", sans-serif;
+}
+.plus{
+  width: 100%;
+  display: flex;
+  margin-left: 65px;
+  background-color: aquamarine;
 }
 .connexion img{
   width: 250px;

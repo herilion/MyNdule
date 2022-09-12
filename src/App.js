@@ -2,10 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Identifiants } from "./Identifiants";
 import axios from "axios";
-
-import styled from "styled-components";
 import Body from "./Body";
-
 import Sidebar from "./Sidebar";
 import Sideleftbar from "./Sideleftbar";
 import jwtDecode from "jwt-decode";
@@ -70,7 +67,7 @@ const App = () => {
     google.accounts.id.initialize({
       client_id:
 
-        "335727433102-geo6pedmit8njss3hhe7nh6gfbkpt79a.apps.googleusercontent.com",
+        "1045931220842-kgg855f16ohi4lkiii0hpuqsjkiv1b07.apps.googleusercontent.com",
       callback: handleCallbackResponse,
     });
     google.accounts.id.renderButton(document.getElementById("googlebtn"), {
@@ -192,7 +189,7 @@ const App = () => {
       </div>
 
       {Object.keys(user).length !== 0 && (
-        <Container>
+        <div className='plus'>
           <Sidebar
             genres={genres}
             ide={ide}
@@ -236,16 +233,9 @@ const App = () => {
             type={type}
             setPlaying={setPlaying}
           />
-        </Container>
+        </div>
       )}
     </div>
   );
 };
-const Container = styled.div`
-  display: flex;
-
-  @media (max-width: 900px) {
-    flex-direction: column-reverse;
-  }
-`;
 export default React.memo(App);

@@ -60,8 +60,6 @@ function Body({
       />
       <div className="entete">
         <span>{yourSearch}</span>
-
-        <span className="detail">SEE DETAIL</span>
       </div>
       <ul className="playlist">
         {playlist.listOfPlaylistFromAPI &&
