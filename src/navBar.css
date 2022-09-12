@@ -17,6 +17,7 @@ display: flex;
   }
   .search_bar span {
       color: blue;
+      cursor: pointer;
   }
   .search_bar {
     background-color: white;

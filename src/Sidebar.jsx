@@ -23,7 +23,7 @@ function Sidebar({ genres, setIde, setYourSearch }) {
         </div>
         <div className="line"></div>
         <ul className="menuprincipal">
-          <span>MENU</span>
+          <span className="menu">MENU</span>
           <li>
             <span><MdHomeFilled /></span>
             <span>Home</span>
