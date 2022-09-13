@@ -48,13 +48,13 @@ const App = () => {
   });
 
   const [user, setUser] = useState({});
+
   const handleCallbackResponse = (response) => {
     var userObject = jwtDecode(response.credential);
     setUser(userObject);
     document.getElementById("googlebtn").hidden = true;
   }
-
-  function handleSignOut(event) {
+  const handleSignOut = (event) => {
     setUser({});
     window.location.reload();
     document.getElementById("googlebtn").hidden = false;
