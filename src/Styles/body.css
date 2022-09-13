@@ -6,7 +6,7 @@
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 10px;
+  height: 5px;
 }
 
 *::-webkit-scrollbar-track {
@@ -27,8 +27,6 @@
   }
   .entete {
     margin-left: 30px;
-    /* margin-right: 38px;
-    margin-bottom: 15px; */
     display: flex;
     justify-content: space-between;
   }
