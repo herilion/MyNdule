@@ -7,7 +7,7 @@ const Login = () => {
                 <h1>My NDULE</h1>
                 <img src="logo.png" alt="" />
             </div>
-            <div id="googlebtn"></div>
+            <div id="googlebtn" className='googlebtn'></div>
         </div>
     );
 }

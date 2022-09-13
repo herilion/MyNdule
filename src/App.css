@@ -18,6 +18,9 @@ body {
   margin-left: 65px;
   background-color: aquamarine;
 }
+.googlebtn{
+  margin-left: 350px;
+}
 .connexion img{
   width: 250px;
   border-radius: 50%;
@@ -53,7 +56,7 @@ li {
 
 .text {
   margin-bottom: 20px;
-  margin-top: 20%;
+  margin-top: 10%;
   font-size: 30px;
   font-weight: bold;
   display: flex;
