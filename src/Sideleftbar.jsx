@@ -22,7 +22,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   ${'' /* width: 20vw; */}
-  background-color: red;
+  background-color: aquamarine;
   height: 128vh;
   iframe {
     height: 100%;

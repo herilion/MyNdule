@@ -6,9 +6,9 @@
 body {
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
   background-color:aquamarine;
   color: white;
 }
@@ -77,9 +77,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: row;
+    gap: 5px;
   }
+  .connexion img{
+  width: 100px;
+  border-radius: 50%;
+}
   h1 {
     width: 300px;
   }
