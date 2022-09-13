@@ -1,6 +1,6 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
-import './navBar.css'
+import '../Styles/navBar.css'
 
 import axios from "axios";
 function Navbar({

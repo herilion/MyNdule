@@ -1,5 +1,5 @@
 import React from "react";
-import './sidebar.css'
+import '../Styles/sidebar.css'
 import {
   MdHomeFilled,
   MdSearch,

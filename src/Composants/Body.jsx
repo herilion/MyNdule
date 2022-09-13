@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './body.css'
+import '../Styles/body.css'
 import Navbar from "./Navbar";
 function Body({
   user,

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { Identifiants } from "./Identifiants";
+import { Identifiants } from "./Composants/Identifiants";
 import axios from "axios";
-import Body from "./Body";
-import Sidebar from "./Sidebar";
-import Sideleftbar from "./Sideleftbar";
+import Body from "./Composants/Body";
+import Sidebar from "./Composants/Sidebar";
+import Sideleftbar from "./Composants/Sideleftbar";
 import jwtDecode from "jwt-decode";
-import Login from "./login";
+import Login from "./Composants/login";
 
 const App = () => {
   const [ide, setIde] = useState("hiphop");
