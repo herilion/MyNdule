@@ -18,12 +18,14 @@ function Sideleftbar({ idp, type }) {
   );
 }
 const Container = styled.div`
+position:fixed;
   overflow: hidden;
-  display: flex;
+  margin-top:20px;
+  ${'' /* display: flex; */}
   flex-direction: column;
   ${'' /* width: 20vw; */}
   background-color: aquamarine;
-  height: 128vh;
+  height: 90vh;
   iframe {
     height: 100%;
     right: 0;
