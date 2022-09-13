@@ -48,11 +48,13 @@ li {
   font-weight: bold;
   z-index: 1;
   position: fixed;
+  cursor: pointer;
 }
 .signout {
   width: 90px;
   margin-left: 90%;
   height: 30px;
+  cursor: pointer;
 }
 
 .text {
