@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { Identifiants } from "./Composants/Identifiants";
+import { Identifiants } from "./Composants/clienSpotify";
 import axios from "axios";
 import Body from "./Composants/Body";
 import Sidebar from "./Composants/Sidebar";
